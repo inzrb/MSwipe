@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>MSwipe-轮播图</title>
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="stylesheet" href="style/index.css" />
+</head>
+<body>
+
+<div class="banner">
+    <!--轮播图主内容 S-->
+    <div class="banner_main">
+        <div class="slider_item">
+            <a class="slider_link" href="https://y.qq.com/">
+                <img class="slider_pic" src="style/img/b1.jpg" />
+            </a>
+        </div>
+        <div class="slider_item">
+            <a class="slider_link" href="https://y.qq.com/">
+                <img class="slider_pic" src="style/img/b2.jpg" />
+            </a>
+        </div>
+        <div class="slider_item">
+            <a class="slider_link" href="https://y.qq.com/">
+                <img class="slider_pic" src="style/img/b3.jpg" />
+            </a>
+        </div>
+        <div class="slider_item">
+            <a class="slider_link" href="https://y.qq.com/">
+                <img class="slider_pic" src="style/img/b4.jpg" />
+            </a>
+        </div>
+        <div class="slider_item">
+            <a class="slider_link" href="https://y.qq.com/">
+                <img class="slider_pic" src="style/img/b5.jpg" />
+            </a>
+        </div>
+        <div class="slider_item">
+            <a class="slider_link" href="https://y.qq.com/">
+                <img class="slider_pic" src="style/img/b6.jpg" />
+            </a>
+        </div>
+        <div class="slider_item">
+            <a class="slider_link" href="https://y.qq.com/">
+                <img class="slider_pic" src="style/img/b7.jpg" />
+            </a>
+        </div>
+    </div>
+    <!--轮播图主内容 E-->
+
+    <!--分页 S-->
+    <div class="banner_control">
+        <span class="c_dot c_dot--current"></span>
+        <span class="c_dot"></span>
+        <span class="c_dot"></span>
+        <span class="c_dot"></span>
+        <span class="c_dot"></span>
+        <span class="c_dot"></span>
+        <span class="c_dot"></span>
+    </div>
+    <!--分页 E-->
+
+</div>
+
+
+
+<!--页面调用JS库-Zepto  -->
+<script src="../src/zepto.js"></script>
+<script src="../src/MSwipe.js"></script>
+<script type="text/javascript">
+ var ms=new MSwipe('.banner_main',{
+    item:".slider_item",
+    mode:"horizontal",
+    effect:"cube",
+    loop:true,
+    speed:600,
+    onTouchEndFunc:function(mySwipe){
+        $(".banner_control .c_dot--current").removeClass("c_dot--current");
+        $(".banner_control .c_dot").eq(mySwipe.index).addClass("c_dot--current");
+    }
+});
+
+</script>
+</body>
+</html>

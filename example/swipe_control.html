@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>MSwipe-控制</title>
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="stylesheet" href="style/index.css" />
+</head>
+<body>
+
+<div class="wrap">
+    <div class="item item-0">
+        <div class="box">
+            <div class="tag">0</div>
+        </div>
+        <!--可自定义背景图-->
+        <div class="bg"></div>
+    </div>
+
+    <div class="item item-1">
+        <div class="box" >
+            <div class="tag">1</div>
+        </div>
+        <div class="bg"></div>
+    </div>
+
+    <div class="item item-2">
+        <div class="box" >
+            <div class="tag">2</div>
+        </div>
+        <div class="bg"></div>
+    </div>
+
+    <div class="item item-3">
+        <div class="box" >
+            <div class="tag">3</div>
+        </div>
+        <div class="bg"></div>
+    </div>
+
+    <div class="item item-4">
+        <div class="box" >
+            <div class="tag">4</div>
+        </div>
+        <div class="bg"></div>
+    </div>
+
+    <div class="item item-5">
+        <div class="box" >
+            <div class="tag">5</div>
+        </div>
+        <div class="bg"></div>
+    </div>
+
+
+</div>
+
+<div class="control">
+    <div class="tag_act" id="act_next">↓</div>
+    <div class="tag_act" id="act_prev">↑</div>
+    <div class="tag_act" id="j0">0</div>
+    <div class="tag_act" id="j1">1</div>
+    <div class="tag_act" id="j2">2</div>
+    <div class="tag_act" id="j3">3</div>
+    <div class="tag_act" id="j4">4</div>
+    <div class="tag_act" id="j5">5</div>
+    <div class="tag_act" id="s0">(0)</div>
+    <div class="tag_act" id="s1">⑴</div>
+    <div class="tag_act" id="s2">⑵</div>
+    <div class="tag_act" id="s3">⑶</div>
+    <div class="tag_act" id="s4">⑷</div>
+    <div class="tag_act" id="s5">⑸</div>
+</div>
+
+<!--页面调用JS库-Zepto  -->
+<script src="../src/zepto.js"></script>
+<script src="../src/MSwipe.js"></script>
+<script type="text/javascript">
+ var ms=new MSwipe('.wrap',{
+    mode:"vertical",
+    loop:true
+});
+$("#act_next").on("click",function(){
+    ms.next();
+});
+$("#act_prev").on("click",function(){
+    ms.prev();
+});
+$("#j0").on("click",function(){
+    ms.jumpTo(0);
+});
+$("#j1").on("click",function(){
+    ms.jumpTo(1);
+});
+$("#j2").on("click",function(){
+    ms.jumpTo(2);
+});
+$("#j3").on("click",function(){
+    ms.jumpTo(3);
+});
+$("#j4").on("click",function(){
+    ms.jumpTo(4);
+});
+$("#j5").on("click",function(){
+    ms.jumpTo(5);
+});
+$("#s0").on("click",function(){
+    ms.skipTo(0);
+});
+$("#s1").on("click",function(){
+    ms.skipTo(1);
+});
+$("#s2").on("click",function(){
+    ms.skipTo(2);
+});
+$("#s3").on("click",function(){
+    ms.skipTo(3);
+});
+$("#s4").on("click",function(){
+    ms.skipTo(4);
+});
+$("#s5").on("click",function(){
+    ms.skipTo(5);
+});
+</script>
+</body>
+</html>

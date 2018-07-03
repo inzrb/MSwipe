@@ -1,0 +1,28 @@
+{
+  "name": "QSwipe",
+  "version": "0.0.1",
+  "file": "QSwipe",
+  "description": "Mobile touch slider and framework with pure page transition effects ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leon",
+  "homepage":"http://isux.qq.com",
+  "license": ["GPL, MIT"],
+  "devDependencies": {
+    "gm": "^1.16.0",
+    "grunt": "~0.4.5",
+    "grunt-cmd-concat": "~0.2.5",
+    "grunt-cmd-transport": "~0.4.0",
+    "grunt-commonjs": "~0.2.0-rc7",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-manifest": "~0.4.0",
+    "grunt-open": "~0.2.2",
+    "matchdep": "~0.3.0"
+  }
+}
