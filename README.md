@@ -55,7 +55,7 @@ MSwipe
     <script type="text/javascript" src="MSwipe.min.js"></script>
     ```
 
-3.在页面中写入对应的dom结构，以下是范例
+3. 在页面中写入对应的dom结构，以下是范例.
    ```html
     <div class="wrap">
         <div class="item item-0">
@@ -89,17 +89,17 @@ MSwipe
    </div>
    ```  
     
-4.在页面上引入对应的样式代码。
-  ```html
-  html,
-  body{height:100%;overflow:hidden;}
-  .wrap,
-  .item,
-  .item .box,
-  .item .bg{position:absolute;display:block;top:0;left:0;width:100%;height:100%;}
-  ``` 
+4. 在页面上引入对应的样式代码.
+   ```js
+   html,
+   body{height:100%;overflow:hidden;}
+   .wrap,
+   .item,
+   .item .box,
+   .item .bg{position:absolute;display:block;top:0;left:0;width:100%;height:100%;}
+   ``` 
 
-5. 现在，你可以通过选择器（selector)在页面中调用QSwipe了。
+5. 现在，你可以通过选择器（selector)在页面中调用QSwipe了.
    ```html
    <script type="text/javascript">
     var ms=new MSwipe('.wrap',{
