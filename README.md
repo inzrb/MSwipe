@@ -7,28 +7,28 @@ MSwipe
 
 
 ### Demos及范例：
-* [水平翻屏](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [垂直翻屏](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [bounce效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [castor效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [cube效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [cubein效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [cubesp效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [ease效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [fade效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [gule效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [normal效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [rotate效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [stack效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [zoomin效果](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [单个轮播图](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [多个轮播图](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [节点控制](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [回调函数](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [节点循环](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [分页导航](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [进度条1](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
-* [进度条2](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
+* [水平翻屏](https://github.com/inzrb/MSwipe/blob/master/example/swipe_horizontal.html)
+* [垂直翻屏](https://github.com/inzrb/MSwipe/blob/master/example/swipe_vertical.html)
+* [bounce效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_bounce.html)
+* [castor效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_castor.html)
+* [cube效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_cube.html)
+* [cubein效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_cubein.html)
+* [cubesp效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_cubesp.html)
+* [ease效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_ease.html)
+* [fade效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_fade.html)
+* [gule效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_gule.html)
+* [normal效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_normal.html)
+* [rotate效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_rotate.html)
+* [stack效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_stack.html)
+* [zoomin效果](https://github.com/inzrb/MSwipe/blob/master/example/effect_zoomin.html)
+* [单个轮播图](https://github.com/inzrb/MSwipe/blob/master/example/swipe_slider.html)
+* [多个轮播图](https://github.com/inzrb/MSwipe/blob/master/example/swipe_slider_multi.html)
+* [节点控制](https://github.com/inzrb/MSwipe/blob/master/example/swipe_control.html)
+* [回调函数](https://github.com/inzrb/MSwipe/blob/master/example/swipe_callback.html)
+* [节点循环](https://github.com/inzrb/MSwipe/blob/master/example/swipe_loop.html)
+* [分页导航](https://github.com/inzrb/MSwipe/blob/master/example/swipe_page.html)
+* [进度条1](https://github.com/inzrb/MSwipe/blob/master/example/swipe_process1.html)
+* [进度条2](https://github.com/inzrb/MSwipe/blob/master/example/swipe_process2.html)
 
 
 使用教程
@@ -122,6 +122,7 @@ new MSwiper(swiperContainer, parameters)- 初始化MSwipe并设置基本参数
 * parameters - 传递设置参数的对象
 
 MSwipe参数列表
+
 | 参数 | 类型 | 默认值 | 说明
 | --- | --- | --- | ---
 | item | string | `'.item'` | 滑屏子节点，可设置HTML节点或者节点选择器
@@ -145,6 +146,7 @@ MSwipe参数列表
 
 MSwipe方法和属性
 方法
+
 | 方法 | 传递参数  | 说明
 | --- |  --- | ---
 | ms.skipTo | number | 滑屏略过跳转至指定的那一屏，例如从第一屏直接跳到第四屏
@@ -155,6 +157,7 @@ MSwipe方法和属性
 | ms.pause | null | 在轮播图中运用，暂停循环播放
 
 属性
+
 | 属性 | 类型  | 说明
 | --- |  --- | ---
 | noTouch | boolean | 是否禁止手势事件
@@ -190,6 +193,7 @@ MSwipe方法和属性
 
 
 回调函数与事件
+
 | 名称 | 传递参数  | 说明
 | --- |  --- | ---
 | onInitFunc | `index`当前屏幕索引 | 滑屏初始化后执行的回调函数
