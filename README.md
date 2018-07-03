@@ -110,7 +110,7 @@ MSwipe
     </script>
     ```
 
-以上，你可以通过代码包`/example/base.html`查看。
+以上，你可以通过代码包`/example/normal.html`查看。
 
 ## 常用设置参数 API
 
