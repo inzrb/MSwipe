@@ -181,7 +181,7 @@ MSwipe方法和属性
 | _maxRange | number | 切换上下屏的临界点数值
 | _movePenc | number | 切换上下屏的临界点数值占整屏的百分比
 | _selector | string | 滑屏子节点的选择器，默认为".item"
-| _setting | object | 所有设置项集合，具体可以参照[MSwipe参数列表](https://github.com/inzrb/MSwipe)
+| _setting | object | 所有设置项集合，具体可以参照[MSwipe参数列表](https://github.com/inzrb/MSwipe/blob/master/README.md#%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0-api)
 | _sideMaxPenc | number | 第一个和最后一个最大可移动的距离占总屏幕百分比
 | _size | number | 滑屏子节点个数
 | _speed | number | 单位：毫秒，设置touchend事件后过渡动画的速度
