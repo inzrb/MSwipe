@@ -153,7 +153,7 @@ MSwipe方法和属性
 | ms.skipTo | number | 滑屏略过跳转至指定的那一屏，例如从第一屏直接跳到第四屏
 | ms.next | null | 跳转至下一屏
 | ms.prev | null | 跳转至上一屏
-| ms.jumpTo | null | 滑屏按顺序跳转至指定的那一屏，例如从第一屏跳到第四屏，需要先跳到第二屏和第三屏
+| ms.jumpTo | number | 滑屏按顺序跳转至指定的那一屏，例如从第一屏跳到第四屏，需要先跳到第二屏和第三屏
 | ms.play | null | 在轮播图中运用，继续自动循环播放
 | ms.pause | null | 在轮播图中运用，暂停循环播放
 
